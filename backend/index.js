@@ -34,12 +34,12 @@ app.use(router);
 //   app.get(/.*/, (req,res)=> res.sendFile(__dirname + '/public/index.html'));
 // }
 
-app.get('/', function(req, res){
-    res.json({ message: 'Welcome to restaurant api' });
+app.get("/", function (req, res) {
+  res.json({ message: "Welcome to restaurant api" });
 });
 
 // PORT
-const PORT = process.env.PORT || 8081;
+const PORT = 3606;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
